@@ -1,25 +1,34 @@
+# Did not do advanced portion because I'm running this in the online IDE and I don't want to fuss with seeing if the file is acutally playing, since there don't seem to be tests in place.
+
 #Here is the song hash you will be working with. Each key is a song name and each value is the location of it's mp3 file.
 #make sure to edit the value of each key to replace < path to this directory >
 #with the correct path to this directory on your computer
 
-# my_songs = {
-# "Go Go GO" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/01.mp3',
-# "LiberTeens" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/02.mp3',
-# "Hamburg" =>  '< path to this directory >/jukebox-cli/audio/Emerald-Park/03.mp3',
-# "Guiding Light" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/04.mp3',
-# "Wolf" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/05.mp3',
-# "Blue" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/06.mp3',
-# "Graduation Failed" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/07.mp3'
-# }
+my_songs = {
+"Go Go GO" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/01.mp3',
+"LiberTeens" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/02.mp3',
+"Hamburg" =>  '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/03.mp3',
+"Guiding Light" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/04.mp3',
+"Wolf" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/05.mp3',
+"Blue" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/06.mp3',
+"Graduation Failed" => '/home/adigitalnative/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/07.mp3'
+}
 
 def help
-  #this method should be the same as in jukebox.rb
-
+  puts "I accept the following commands:"
+  puts "- help : displays this help message"
+  puts "- list : displays a list of songs you can play"
+  puts "- play : lets you choose a song to play"
+  puts "- exit : exits this program"
 end
 
 
 
 def list(my_songs)
+  songs = []
+  
+  my_songs.keys.each do |song, filename|
+    puts "#{}"
   #this method is different! Collect the keys of the my_songs hash and 
   #list the songs by name
 end
